@@ -1,0 +1,15 @@
+h1{
+	text-align: center;
+	color: darkred;
+	font-family: TimesNewRoman;
+}
+
+h1,h2,h3,h4,h5{
+ color: greenyellow;
+}
+p.right{text-align: right}
+p.center{text-align: center}
+
+body{
+	 background-color: black;
+}

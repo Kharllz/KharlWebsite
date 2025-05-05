@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KILOMETER</title>
+	<script>
+		function calculate(){
+ var num = parseFloat(document.getElementById("num").value);
+ var answer = num * 100000;
+ document.getElementById("result").innerText = num + "Kilometers is: " +answer + "cm";
+}
+	</script>
+</head>
+
+<body>
+<input type="text" id="num" placeholder="ENTER A NUMBER"> <button onclick="calculate()">SUBMIT</button>
+<div id="result"></div><br>
+
+</body>
+</html>

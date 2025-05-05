@@ -1,0 +1,13 @@
+body{background-color: darkkhaki;}
+h1,h2{color: red;}
+ol{font-family: arial;
+   font-size: 14px;}
+li{font-size: 13px;}
+.Winter{ text-decoration: underline;}
+.italic{font-style: italic;}
+.colorA{color: blueviolet;}
+.colorB{color: papayawhip;}
+.colorC{color: greenyellow;}
+.colorD{color: salmon;}
+.colorE{color: lightpink;}
+.colorF{color: teal;}

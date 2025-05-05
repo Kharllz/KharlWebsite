@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Multiplication Table Generator</h2>
+    <button onclick="generateTable()">Generate Table</button>
+    <br><br>
+    <table id="multiplicationTable"></table>
+
+    <script>
+        function generateTable() {
+            let rows = prompt("Enter row:");
+            let columns = prompt("Enter column:");
+            let table = document.getElementById("multiplicationTable");
+
+            table.innerHTML = ""; // Clear previous table
+
+            for (let i = 1; i <= rows; i++) {
+                let row = table.insertRow();
+                for (let j = 1; j <= columns; j++) {
+                    let cell = row.insertCell();
+                    cell.textContent = i * j;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

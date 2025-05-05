@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LAB Exer2</title>
+    <style>
+    
+    </style>
+    <script type="text/javascript">
+        function calculate(){
+            var num1 = parseFloat(document.getElementById("num1").value);
+
+            if (num1%2==0){
+                document.getElementById("Result1").innerHTML = "The numbes is even" ;
+
+            }else{
+                document.getElementById("Result1").innerHTML = "The numbes is odd" ;
+            }
+
+            var count = 0;
+            for (let i=1; i<=num1; i++){
+                    if (num1%i==0){
+                        count=count+1;
+               }
+            }
+            if (num1<=1){
+                document.getElementById("Result2").innerHTML = "INVALID" ;
+            }
+            else if(count<=2){
+                document.getElementById("Result2").innerHTML = "The number is Prime" ;
+            }else{
+                document.getElementById("Result2").innerHTML = "The number is Composite" ;
+            }
+        }  
+
+    </script>
+</head>
+<body>
+    <div id="content">
+    <div style="padding: 20px 20px 20px; border: solid; margin-right: 80%;">
+    <input type="text" id="num1" placeholder="ENTER A NUMBER"><button onclick="calculate();">Submit</button>
+    </div>
+    <div id="Result1"></div>
+    <div id="Result2"></div>
+</div>
+</body>
+</html>
